@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrCoffee</title>
+    <link rel="icon" type="png" href="./assets/Icon.png">
+    <link rel="stylesheet" href="./css/aboutUs.css">
+</head>
+<body>
+    <header class="navbar">
+        <ul class="nav-links">
+            <li><a href="./html/aboutUs.html">About Us</a></li>
+            <li><a href="./html/rewards.html">Rewards</a></li>
+            <li class="no-circle"><a href="./html/index.html"><img src="./assets/Logo.png" class="logo"></a></li>
+            <li><a href="./html/menu.html">Menu</a></li>
+            <li><a href="./html/order.html">Order</a></li>
+         </ul>
+    </header>
+    <div class="hero">
+        <h2>Our Founder:</h2>
+        <img src="./assets/CEO image.jpeg" class="founder-img">
+        <img src="./assets/Coffee Splash Effect.png" class="splash">
+        <h1>Susanto Liman</h1>
+        <p>Born in 1982 to an Indonesian family with a rich tradition of coffee appreciation, Susanto Liman grew up surrounded by the vibrant coffee culture of his homeland. Inspired by his heritage and driven by an enduring passion for crafting the perfect cup, he embarked on a journey to share the essence of Indonesian coffee with the world.
+    In 2005, he founded MrCoffee, a cozy café rooted in the values of quality, authenticity, and innovation. What began as a small neighborhood shop quickly became a local favorite, celebrated for its distinctive blends, meticulously brewed coffee, and inviting atmosphere. Susanto’s dedication to sourcing the finest beans—many from Indonesia’s renowned coffee regions—and his commitment to perfecting every step of the coffee-making process turned MrCoffee into more than just a café; it became a gathering place for true coffee enthusiasts.
+    To this day, Susanto continues to pour his heart into every cup served at MrCoffee, ensuring each sip tells a story of passion, culture, and the timeless art of coffee.</p>   
+    </div>
+    <div class="cards">
+        <img src="./assets/Coffee Pour.png" id="pour1">
+        <img src="./assets/Coffee Pour.png" id="pour2">
+        <div class="mission">
+            <h2>Our Mission:</h2>
+            <img src="./assets/Mission Bdrop.jpeg" id="mission-bg">
+            <p>At MrCoffee, we envision a world where every cup of coffee is more than just a drink—it’s an experience. We strive to set new standards in coffee craftsmanship, bringing people together through the finest blends, authentic flavors, and an atmosphere that feels like home. Our goal is to be a globally recognized name, known for quality, passion, and innovation in every sip.</p>
+        </div>
+        <div class="vision">
+            <h2>Our vision:</h2>
+            <img src="./assets/Vision Bdrop.jpeg" id="vision-bg">
+            <p>Our mission is simple: to share the art of coffee with the world. We are committed to:
+    <br>Sourcing the Best Beans - Handpicking the finest coffee beans from sustainable farms worldwide.
+    <br>Crafting Perfection - Using expert roasting and brewing techniques to create the perfect cup.
+    <br>Building a Coffee Community - Creating a space where coffee lovers can connect, relax, and be inspired.
+    <br>Sustainability & Ethics - Supporting fair trade and eco-friendly practices to protect our planet and coffee farmers.</p>
+        </div>
+        <div class="story">
+            <h2>Our Shop's Story:</h2>
+            <img src="./assets/Coffee Shop Background.jpeg" id="story-bg">
+            <p>In 2005, Christopher took a leap of faith and founded MrCoffee, a small café with a big dream—to serve exceptional, handcrafted coffee and create a space where people could truly appreciate the art of brewing. The journey wasn’t easy; he worked tirelessly as a barista, roaster, and entrepreneur, ensuring every cup met his high standards.
+    Through dedication and an unwavering commitment to quality, MrCoffee grew into a beloved brand, known for its rich flavors, sustainable sourcing, and deep appreciation for authentic coffee culture. Today, Christopher continues to inspire coffee lovers worldwide, proving that true passion and craftsmanship can turn a dream into reality—one cup at a time.</p>
+        </div>
+    </div>
+    <footer class="bottom-page">
+        <img src="./assets/Icon.png" id="bottom-icon">
+        <div class="download-copyright">
+            <button onclick="openPopup()">DOWNLOAD</button>
+            <span>©Copyright 2025 Mr.Coffee</span>
+        </div>
+        <div class="contacts">
+            <div class="contacts-items">
+                <img src="./assets/instagram.png">
+                <span>mr.coffee2005</span>
+            </div>
+            <div class="contacts-items">
+                <img src="./assets/youtube.png">
+                <span>MrCoffee</span>
+            </div>
+            <div class="contacts-items">
+                <img src="./assets/facebook.png">
+                <span>mrcoffee2005</span>
+            </div>
+            <div class="contacts-items">
+                <img src="./assets/tik-tok.png">
+                <span>mr_coffee2005</span>
+            </div>
+        </div>
+    </footer>
+    <div class="popup-container" id="myPopup">
+        <div class="popup">
+            <div class="popup-header">
+                <h2>Download</h2>
+                <button class="close-btn" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popup-content">
+                <a href="https://play.google.com/store/games?hl=en" target="_blank" rel="noopener noreferrer"><img src="./assets/Google Play Download.png" class="android"></a>
+                <a href="https://www.apple.com/id/app-store/" target="_blank" rel="noopener noreferrer"><img src="./assets/IOs Download.png" class="apple"></a>
+            </div>
+            <div class="popup-footer">
+                <button class="btn" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/download pop.js"></script>
+</body>
+</html>

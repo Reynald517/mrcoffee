@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrCoffee</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="icon" type="png" href="./assets/Icon.png">
+</head>
+<body>
+    <header class="navbar">
+        <ul class="nav-links">
+            <li><a href="./html/aboutUs.html">About Us</a></li>
+            <li><a href="./html/rewards.html">Rewards</a></li>
+            <li class="no-circle"><a href="./html/index.html"><img src="./assets/Logo.png" class="logo"></a></li>
+            <li><a href="./html/menu.html">Menu</a></li>
+            <li><a href="./html/order.html">Order</a></li>
+         </ul>
+    </header>
+    <div class="content">
+        <div class="sidebar">
+            <ul class="sidebar-links">
+                <li><a href="./html/menu(espresso).html">Espresso</a></li>
+                <li><a href="./html/menu(cappuccino).html">Cappuccino</a></li>
+                <li><a href="./html/menu(americano).html">Americano</a></li>
+                <li><a href="./html/menu(latte).html">Latte</a></li>
+                <li><a href="./html/menu(bread).html">Bread</a></li>
+                <li><a href="./html/menu(dishes).html">Italian Food</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <h1>Cappuccino:</h1>
+            <div class="menu-content-wrapper">
+                <div class="menu-content 1">
+                    <div class="items 1">
+                        <img src="./assets/Cappuccino(Menu)/Caramel Hazelnut Cappuccino.jpeg">
+                        <span>Caramel Hazelnut Cappuccino<br>$4.30</span>
+                    </div>
+                    <div class="items 2">
+                        <img src="./assets/Cappuccino(Menu)/Marshmallow Cappuccino.jpeg">
+                        <span>Marshmallow Cappuccino<br>$4.20</span>
+                    </div>
+                    <div class="items 3">
+                        <img src="./assets/Cappuccino(Menu)/Spiced Cappuccino.jpeg">
+                        <span>Spiced Cappuccino<br>$4.00</span>
+                    </div>
+                </div>
+                <div class="menu-content 2">
+                    <div class="items 4">
+                        <img src="./assets/Cappuccino(Menu)/Cappuccino.jpeg">
+                        <span>Cappuccino<br>$3.90</span>
+                    </div>
+                    <div class="items 5">
+                        <img src="./assets/Cappuccino(Menu)/Orange Cappuccino.jpeg">
+                        <span>Orange Cappuccino<br>$4.25</span>
+                    </div>
+                    <div class="items 6">
+                        <img src="./assets/Cappuccino(Menu)/Vanilla Cappuccino.jpeg">
+                        <span>Vanilla Cappuccino<br>$4.50</span>
+                    </div>
+                </div>
+            </div>
+            <a href="./html/order.html"><button>Order</button></a>
+        </div>
+    </div>
+    <footer class="bottom-page">
+        <img src="./assets/Icon.png" id="bottom-icon">
+        <div class="download-copyright">
+            <button onclick="openPopup()">DOWNLOAD</button>
+            <span>©Copyright 2025 Mr.Coffee</span>
+        </div>
+        <div class="contacts">
+            <div class="contacts-items">
+                <img src="./assets/instagram.png">
+                <span>mr.coffee2005</span>
+            </div>
+            <div class="contacts-items">
+                <img src="./assets/youtube.png">
+                <span>MrCoffee</span>
+            </div>
+            <div class="contacts-items">
+                <img src="./assets/facebook.png">
+                <span>mrcoffee2005</span>
+            </div>
+            <div class="contacts-items">
+                <img src="./assets/tik-tok.png">
+                <span>mr_coffee2005</span>
+            </div>
+        </div>
+    </div>
+    <div class="popup-container" id="myPopup">
+        <div class="popup">
+            <div class="popup-header">
+                <h2>Download</h2>
+                <button class="close-btn" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popup-content">
+                <a href="https://play.google.com/store/games?hl=en" target="_blank" rel="noopener noreferrer"><img src="./assets/Google Play Download.png" class="android"></a>
+                <a href="https://www.apple.com/id/app-store/" target="_blank" rel="noopener noreferrer"><img src="./assets/IOs Download.png" class="apple"></a>
+            </div>
+            <div class="popup-footer">
+                <button class="btn" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/download pop.js"></script>
+</body>
+</html>

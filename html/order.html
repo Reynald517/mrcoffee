@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrCoffee</title>
+    <link rel="stylesheet" href="./css/order.css">
+    <link rel="icon" type="png" href="./assets/Icon.png">
+</head>
+<body>
+    <header class="navbar">
+        <ul class="nav-links">
+            <li><a href="./html/aboutUs.html">About Us</a></li>
+            <li><a href="./html/rewards.html">Rewards</a></li>
+            <li class="no-circle"><a href="./html/index.html"><img src="./assets/Logo.png" class="logo"></a></li>
+            <li><a href="./html/menu.html">Menu</a></li>
+            <li><a href="./html/order.html">Order</a></li>
+         </ul>
+    </header>
+    <div class="order-content">
+        <form action="" method="post" id="orderForm">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Insert your name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Insert your email address" required>
+            <br>
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" placeholder="Insert your home address" required>
+            <br>
+            <div id="order-items">
+                <div class="order-row" id="order-row-1">
+                    <label for="item-category-1">Category:</label>
+                    <select id="item-category-1" class="category-select" data-row="1" onchange="updateItems(1)">
+                        <option value="" disabled selected hidden>Select Category</option>
+                        <option value="Espresso">Espresso</option>
+                        <option value="Cappuccino">Cappuccino</option>
+                        <option value="Bread">Bread</option>
+                        <option value="Americano">Americano</option>
+                        <option value="Latte">Latte</option>
+                        <option value="Italian Food">Italian Food</option>
+                    </select>
+
+                    <label for="items-1">Items:</label>
+                    <select id="items-1" class="items-select" data-row="1" onchange="handleItemSelected(1)">
+                        <option value="" disabled selected hidden>Select Item</option>
+                    </select>
+                    
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" class="amount-input" min="1" value="1" data-row="1" onchange="updateOrderSummary()">
+                </div>
+            </div>
+            
+            <button type="button" onclick="addNewOrderRow()">Add Another Item</button>
+            
+            <div id="order-summary">
+                <h3>Order Summary:</h3>
+                <ul id="order-summary-list"></ul>
+                <p>Total: $<span id="total-price">0.00</span></p>
+            </div>
+            
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+    <footer class="bottom-page">
+        <img src="./assets/Icon.png" id="bottom-icon">
+        <div class="download-copyright">
+            <button onclick="openPopup()" id="dwnld-btn">DOWNLOAD</button>
+            <span>©Copyright 2025 Mr.Coffee</span>
+        </div>
+        <div class="contacts">
+            <div class="contacts-items">
+                <img src="./assets/instagram.png">
+                <span>mr.coffee2005</span>
+            </div>
+            <div class="contacts-items">
+                <img src="./assets/youtube.png">
+                <span>MrCoffee</span>
+            </div>
+            <div class="contacts-items">
+                <img src="./assets/facebook.png">
+                <span>mrcoffee2005</span>
+            </div>
+            <div class="contacts-items">
+                <img src="./assets/tik-tok.png">
+                <span>mr_coffee2005</span>
+            </div>
+        </div>
+    </footer>
+    <div class="popup-container" id="myPopup">
+        <div class="popup">
+            <div class="popup-header">
+                <h2>Download</h2>
+                <button class="close-btn" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popup-content">
+                <a href="https://play.google.com/store/games?hl=en" target="_blank" rel="noopener noreferrer"><img src="./assets/Google Play Download.png" class="android"></a>
+                <a href="https://www.apple.com/id/app-store/" target="_blank" rel="noopener noreferrer"><img src="./assets/IOs Download.png" class="apple"></a>
+            </div>
+            <div class="popup-footer">
+                <button class="btn" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+    <script src="./js/validation.js"></script>
+    <script src="./js/download pop.js"></script>
+    <script src="./js/order.js"></script>
+</body>
+</html>

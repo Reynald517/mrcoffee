@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrCoffee</title>
+    <link rel="icon" type="png" href="./assets/Icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <ul class="nav-links">
+            <li><a href="./html/aboutUs.html">About Us</a></li>
+            <li><a href="./html/rewards.html">Rewards</a></li>
+            <li class="no-circle"><a href="./html/index.html"><img src="./assets/Logo.png" class="logo"></a></li>
+            <li><a href="./html/menu.html">Menu</a></li>
+            <li><a href="./html/order.html">Order</a></li>
+         </ul>  
+    </header>
+    <div class="hero-box">
+        <img src="./assets/coffee background table close up.jpeg" class="hero-bg">
+        <div class="hero-text">
+            <h2>The best <span class="hero-text">coffee</span> <br>you can get.</h2>
+        </div>
+    </div>
+    <div class="drinks">
+        <h1 class="drinks-header">Our most ordered drinks:</h1>
+        <img src="./assets/Coffee Pour.png" class="coffee-pour1">
+        <img src="./assets/Coffee Pour.png" class="coffee-pour2">
+        <div class="drinks-images">
+            <div>
+                <img src="./assets/Caramel Hazelnut Cappuccino.jpeg">
+                <p>Caramel Cappuccino<br>$5.49</p>
+                <a href="./html/menu.html">
+                    <button>MORE</button>
+                </a>
+            </div>
+            <div>
+                <img src="./assets/Honey Cappuccino.jpeg">
+                <p>Honey Cappuccino<br>$5.99</p>
+                <a href="./html/menu.html">
+                    <button>MORE</button>
+                </a>
+            </div>
+            <div>
+                <img src="./assets/Cherry Latte.jpeg">
+                <p>Cherry Latte<br>$6.49</p>
+                <a href="./html/menu.html">
+                    <button>MORE</button>
+                </a>
+            </div>
+            <div>
+                <img src="./assets/Chocolate Frappe.jpeg">
+                <p>Chocolate Frappe<br>$6.99</p>
+                <a href="./html/menu.html">
+                    <button>MORE</button>
+                </a>
+            </div>
+            <div>
+                <img src="./assets/Bavarian Americano.jpeg">
+                <p>Bavarian Americano<br>$7.49</p>
+                <a href="./html/menu.html">
+                    <button>MORE</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="homepage-reward">
+        <h1 class="homepage-reward-header">Check one of our many rewards:</h1>
+        <div class="homepage-reward-banner">
+            <img src="./assets/MrCoffee Reward Cards - Anniversary.PNG" class="reward-banner imgre">
+            <a href="./html/rewards.html"><button>READ MORE</button></a>
+        </div>
+    </div>
+    <div class="homepage-founder">
+        <h1>Our Founder:</h1>
+        <div class="homepage-founder-content">
+            <div class="homepage-founder-desc">
+                <img src="./assets/BEAN.png">
+                <h2>Susanto Liman</h2>
+                <p>Born in 1982 to a family with deep Indonesian roots, Susanto Liman grew up surrounded by the rich aromas of freshly brewed coffee. Inspired by his heritage and a lifelong passion for crafting the perfect cup of coffee, he set out to share his love with the world. In 2005, he founded a small coffee shop which the world know today as Mr.Coffee.
+                </p>
+                <a href="./html/aboutUs.html">
+                    <button>LEARN MORE</button>
+                </a>
+            </div>
+            <img src="./assets/CEO image.jpeg">
+        </div>
+    </div>
+    <footer class="bottom-page">
+        <img src="./assets/Icon.png" id="bottom-icon">
+        <div class="download-copyright">
+            <button onclick="openPopup()">DOWNLOAD</button>
+            <span>©Copyright 2025 Mr.Coffee</span>
+        </div>
+        <div class="contacts">
+            <div class="contacts-items">
+                <img src="./assets/instagram.png">
+                <span>mr.coffee2005</span>
+            </div>
+            <div class="contacts-items">
+                <img src="./assets/youtube.png">
+                <span>MrCoffee</span>
+            </div>
+            <div class="contacts-items">
+                <img src="./assets/facebook.png">
+                <span>mrcoffee2005</span>
+            </div>
+            <div class="contacts-items">
+                <img src="./assets/tik-tok.png">
+                <span>mr_coffee2005</span>
+            </div>
+        </div>
+    </footer>
+    <div class="popup-container" id="myPopup">
+        <div class="popup">
+            <div class="popup-header">
+                <h2>Download</h2>
+                <button class="close-btn" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popup-content">
+                <a href="https://play.google.com/store/games?hl=en" target="_blank" rel="noopener noreferrer"><img src="./assets/Google Play Download.png" class="android"></a>
+                <a href="https://www.apple.com/id/app-store/" target="_blank" rel="noopener noreferrer"><img src="./assets/IOs Download.png" class="apple"></a>
+            </div>
+            <div class="popup-footer">
+                <button class="btn" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/download pop.js"></script>
+</body>
+</html>
